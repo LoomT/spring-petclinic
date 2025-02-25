@@ -5,7 +5,7 @@ javaApplication {
     implementation("io.projectreactor:reactor-core:3.7.3")
 
     implementation("org.springframework.boot:spring-boot-starter-cache:3.4.2")
-      implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.4.2")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.4.2")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2")
     implementation("org.springframework.boot:spring-boot-starter-web:3.4.2")
     implementation("org.springframework.boot:spring-boot-starter-validation:3.4.2")
@@ -19,7 +19,7 @@ javaApplication {
     runtimeOnly("com.h2database:h2:2.3.232")
     runtimeOnly("com.mysql:mysql-connector-j:9.2.0")
     runtimeOnly("org.postgresql:postgresql:42.7.5")
-//    developmentOnly("org.springframework.boot:spring-boot-devtools")
+
     testing {
       dependencies {
         implementation("org.springframework.boot:spring-boot-starter-test:3.4.2")
