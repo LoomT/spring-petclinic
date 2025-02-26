@@ -19,17 +19,16 @@ javaApplication {
     runtimeOnly("com.h2database:h2:2.3.232")
     runtimeOnly("com.mysql:mysql-connector-j:9.2.0")
     runtimeOnly("org.postgresql:postgresql:42.7.5")
-
-    testing {
-      dependencies {
-        implementation("org.springframework.boot:spring-boot-starter-test:3.4.2")
-        implementation("org.springframework.boot:spring-boot-testcontainers:3.4.2")
-        implementation("org.springframework.boot:spring-boot-docker-compose:3.4.2")
-        implementation("org.testcontainers:junit-jupiter:1.20.4")
-        implementation("org.testcontainers:mysql:1.20.4")
-        implementation("org.junit.jupiter:junit-jupiter:5.11.4")
-        runtimeOnly("org.junit.platform:junit-platform-launcher:1.11.4")
-      }
+  }
+  testing {
+    dependencies {
+      implementation("org.springframework.boot:spring-boot-starter-test:3.4.2")
+      implementation("org.springframework.boot:spring-boot-testcontainers:3.4.2")
+      implementation("org.springframework.boot:spring-boot-docker-compose:3.4.2")
+      implementation("org.testcontainers:junit-jupiter:1.20.4")
+      implementation("org.testcontainers:mysql:1.20.4")
+      implementation("org.junit.jupiter:junit-jupiter:5.11.4")
+      runtimeOnly("org.junit.platform:junit-platform-launcher:1.11.4")
     }
   }
 }
